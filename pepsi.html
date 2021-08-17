@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pespi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pepsi.css">
+</head>
+<body>
+   <div class="holder">
+    <header>
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="logo">
+        </a>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="box">
+            <h1>
+                that's what <br>
+                 <span>i like</span>
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Neque magni at deserunt aperiam quidem vitae sequi odit commodi
+                  accusamus ipsam vero tempore ad, 
+                ullam, temporibus molestias libero inventore. Debitis, fugiat.
+            </p>
+            <button>view all products</button>
+        </div>
+        <div class="image">
+            <img src="images/pepsi001.png" alt="pepsi">
+        </div>
+
+        <ul class="change-pepsi">
+            <li><img src="images/pepsi001.png" alt="" onclick="changePepsi('images/pepsi001.png') ; changeBackgroud('#0062be')"></li>
+            <li><img src="images/pepsi002.png" alt="" onclick="changePepsi('images/pepsi002.png'); changeBackgroud('#e60c2c')"></li>
+            <li><img src="images/pepsi003.png" alt="" onclick="changePepsi('images/pepsi003.png'); changeBackgroud('#1e1e1e')"></li>
+        </ul>
+        <ul class="social">
+            <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+   </div>
+
+   <script>
+       function changePepsi(imageSource){
+        let image = document.querySelector(".image img") ; 
+        image.src = imageSource ; 
+       }
+       function changeBackgroud(color){
+           let holder = document.querySelector(".holder") ; 
+           holder.style.background = color
+       }
+   </script>
+</body>
+</html>
